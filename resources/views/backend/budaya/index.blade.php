@@ -101,7 +101,7 @@
                                 <th>Nama </th>
                                 <th>Deskripsi</th>
                                 <th>Lokasi</th>
-                                <th>Tahun Ditemukan</th>
+                                <th>Tahun diciptakan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
