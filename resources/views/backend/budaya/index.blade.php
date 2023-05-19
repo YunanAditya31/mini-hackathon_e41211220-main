@@ -22,7 +22,7 @@
                         <li class="nav-item">
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#basicModal">
-                                Tambah Hewan
+                                Tambah Perumahan
                             </button>
                         </li>
                     </ul>
@@ -47,7 +47,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">Tambah Hewan</h5>
+                                    <h5 class="modal-title">Tambah Perumahan</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -57,11 +57,11 @@
                                     <div class="modal-body">
 
                                         <div class="form-group mb-3">
-                                            <label for="nama">Nama </label>
+                                            <label for="nama">Nama Perumahan</label>
                                             <input type="text" class="form-control" name="nama" id="nama" required>
                                         </div>
                                         <div class="form-group mb-3">
-                                            <label for="deskripsi">deskripsi </label>
+                                            <label for="deskripsi">Deskripsi Fasilitas</label>
                                             <input type="text" class="form-control" name="deskripsi" id="deskripsi" required>
                                         </div>
                                         <div class="form-group mb-3">
@@ -72,9 +72,9 @@
                                        
 
                                         <div class="form-group mb-3">
-                                            <label for="tahun_ditemukan">Tahun Ditemukan</label>
+                                            <label for="tahun_ditemukan">Tahun Pembuatan</label>
                                             <input type="number" class="form-control" name="tahun_ditemukan"
-                                                id="tahun_ditemukan" min="1900" max="{{ date('Y') }}" required>
+                                                id="tahun_ditemukan" min="2000" max="{{ date('Y') }}" required>
                                         </div>
 
                                     
@@ -91,17 +91,17 @@
                     </div>
 
                 </div>
-                <h5 class="card-title">Pendidikan</h5>
+                <h5 class="card-title">Perumahan</h5>
                 {{-- data Pendidikan --}}
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th>No.</th>
-                                <th>Nama </th>
-                                <th>Deskripsi</th>
+                                <th>Nama Perumahan</th>
+                                <th>Deskripsi Fasilitas</th>
                                 <th>Lokasi</th>
-                                <th>Tahun diciptakan</th>
+                                <th>Tahun Pembuatan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -134,7 +134,7 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title">Edit Pendidikan</h5>
+                                            <h5 class="modal-title">Edit Perumahan</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
@@ -145,13 +145,13 @@
                                             <div class="modal-body">
 
                                                 <div class="form-group mb-3">
-                                                    <label for="nama">Nama Hewan</label>
+                                                    <label for="nama">Nama Perumahan</label>
                                                     <input type="text" class="form-control" name="nama" id="nama"
                                                         value="{{ $item->nama }}" required>
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label for="deskripsi">Deskripsi</label>
+                                                    <label for="deskripsi">Deskripsi Fasilitas</label>
                                                     <input type="text" class="form-control" name="deskripsi" id="deskripsi"
                                                         value="{{ $item->deskripsi }}" required>
                                                 </div>
@@ -162,7 +162,7 @@
                                                 </div>
 
                                                 <div class="form-group mb-3">
-                                                    <label for="tahun_ditemukan">Tahun Ditemukan</label>
+                                                    <label for="tahun_ditemukan">Tahun Pembuatan</label>
                                                     <input type="number" class="form-control" name="tahun_ditemukan"
                                                         id="tahun_ditemukan" min="1900" max="{{ date('Y') }}"
                                                         value="{{ $item->tahun_ditemukan }}" required>
